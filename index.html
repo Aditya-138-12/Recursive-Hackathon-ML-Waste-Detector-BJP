@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Waste Management</title>
+    
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpIXzzpYCzoOXhW7cWpk66_OtXGozmQ5Q&loading=async&callback=initMap">
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<div class="mainChatBot-SearchDiv" id="mainChatBot-SearchDiv">
+		<div class="mainChatBot-SearchDiv-closeDiv" id="mainChatBot-SearchDiv-closeDiv">
+			<div class="pil1"></div>
+			<div class="pil2"></div>
+		</div>
+		<input type="text" id="mainChatBot-SearchDiv-input" placeholder="Find or Discover A Feature">
+		<div class="aiTextDiv" id="aiTextDiv">
+			<span class="ai-logo"></span><p class="ai-text" id="ai-text">Hi There, Ask Me Anything!!</p>
+		</div>
+	</div>	
+	
+    <header>
+        <h1 class="heading">Urban Waste Management</h1>
+        
+        <div class="test_btn_changing_map_style" id="test_btn_changing_map_style"><span>Change Map Mode</span></div>
+        
+        <div id="search-bar">
+            <input type="text" id="search_input" class="search_input" placeholder="Search for locations...">
+            <button id="search_button">Search</button>
+        </div>
+        <div id="user-controls">
+            <button id="admin-dashboard-button" style="display:none;">Admin Dashboard</button>
+        </div>
+        
+        <div class="aiBotDiv" id="aiBotDiv"></div>
+        
+    </header>
+    <main>
+        <div id="map"></div>
+        <div id="info-panel" style="background-color:; margin-top:0vw; margin-left:-0.1vw; height:95.9%;">
+            <button id="refresh-button" style="position:relative; top:39.5vw; left:calc(10vw);">Refresh Data</button>
+            <!--<h2>Reported Litter Spots</h2>-->
+            <ul id="report-list"></ul>
+            
+            <div class="imageDisplayDiv" id="imageDisplayDiv">
+            	<div class="closingDiv" id="closingDiv"></div>
+            </div>
+            
+            <div id="suggestion-box">
+        <h3>Submit a Suggestion</h3>
+        <textarea id="suggestion-text" placeholder="Enter your suggestion..."></textarea>
+        <button id="submit-suggestion-button">Submit</button>
+        <ul id="suggestion-list"></ul>
+    	</div>
+    	
+    	<div class="imageUploadDiv" id="imageUploadDiv"><span style="color:rgba(0, 0, 0, 0.8); position:absolute; left:0.4vw;">Upload Image</span></div>
+    	<input style="position:absolute; right:0vw;" type="file" id="imageInput" accept="image/*">
+            
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Urban Waste Management</p>
+    </footer>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpIXzzpYCzoOXhW7cWpk66_OtXGozmQ5Q&loading=async&callback=initMap">
+    </script>
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</body>
+</html>
